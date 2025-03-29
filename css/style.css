@@ -442,17 +442,28 @@ body {
 /* Project 1 */
 
 .project-detail {
-	max-width: 800px;
+	max-width: 100%;
 	margin: 50px auto;
-	padding: 20px;
 	text-align: center;
 }
 
 .project-detail img {
 	width: 100%;
-	max-width: 600px;
+	max-width: 800px;
 	border-radius: 10px;
 	margin-top: 10px;
+}
+
+.project-text-container {
+	max-width: 800px; /* Matches the max width of the image */
+	margin: 0 auto; /* Centers it */
+	background: #292929; /* Lighter dark background */
+	color: white;
+	padding: 20px;
+	text-align: left;
+	font-size: 1.2rem;
+	line-height: 1.6;
+	border-radius: 10px;
 }
 
 .back-button {
@@ -468,6 +479,38 @@ body {
 
 .back-button:hover {
 	background: #555;
+}
+
+.video-container {
+	width: 100%;
+	max-width: 800px; /* Matches text width */
+	margin: 0 auto; /* Centers the video */
+	padding: 20px 0; /* Add padding only to the container */
+}
+
+.project-video {
+	width: 100%;
+	border-radius: 10px;
+	display: block;
+}
+
+.gallery-container {
+	display: flex;
+	justify-content: center; /* Center the images horizontally */
+	gap: 10px; /* Spacing between images */
+	margin: 20px 0; /* Add spacing above and below */
+}
+
+.gallery-container img {
+	width: 400px; /* Adjust width as needed */
+	height: auto;
+	border-radius: 8px; /* Optional: Rounded corners */
+	object-fit: cover;
+	transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+	transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 /* Blogs Page */
