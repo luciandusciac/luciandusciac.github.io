@@ -74,32 +74,6 @@ h4{
 	letter-spacing: 2px;
 	font-size: 30px;
 }
-/*.newslatter form{
-	width: 380px;
-	max-width: 100%;
-	position: relative;
-}
-.newslatter form input:first-child{
-	display: inline-block;
-	width: 100%;
-	padding: 14px 130px 14px 15px;
-	border: 2px solid #f9004d;
-	outline: none;
-	border-radius: 30px;
-}
-.newslatter form input:last-child{
-	position: absolute;
-	display: inline-block;
-	outline: none;
-	border: none;
-	padding: 10px 30px;
-	border-radius: 30px;
-	background-color:#f9004d;
-	color: white;
-	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-	top: 6px;
-	right: 6px; 
-}*/
 
 .about{
 	width: 100%;
@@ -149,59 +123,7 @@ h4{
 	font-size: 18px;
 	margin-bottom: 45px;
 }
-/*button{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 13px 30px;
-	border-radius: 30px;
-	transition: .4s; 
-}
-button:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
-	cursor: pointer;
-}*/
 
-/*.service{
-	background: #101010;
-	width: 100%;
-	padding: 100px 0px;
-}
-.title h2{
-	color: white;
-	font-size: 75px;
-	width: 1130px;
-	margin: 30px auto;
-	text-align: center;
-}
-.box{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 400px;
-}
-.card{
-	height: 365px;
-	width: 335px;
-	padding: 20px 35px;
-	background: #191919;
-	border-radius: 20px;
-	margin: 15px;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-}
-.card i{
-	font-size: 50px;
-	display: block;
-	text-align: center;
-	margin: 25px 0px;
-	color: #f9004d;
-
-}*/
 h5{
 	color: white;
 	font-size: 23px;
@@ -213,51 +135,7 @@ h5{
 	line-height: 27px;
 	margin-bottom: 25px;
 }
-/*.card .button{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 9px 22px;
-	border-radius: 30px;
-	transition: .4s; 
-}
-.card .button:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
-	cursor: pointer;
-}*/
-/*.contact-me{
-	width: 100%;
-	height: 290px;
-	background: #191919;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-}
-.contact-me p{
-	color: white;
-	font-size: 30px;
-	font-weight: bold;
-	margin-bottom: 25px;
-}
-.contact-me .button-two{
-	background-color:#f9004d;
-	color: white;
-	text-decoration: none;
-	border: 2px solid transparent;
-	font-weight: bold;
-	padding: 13px 30px;
-	border-radius: 30px;
-	transition: .4s; 
-}
-.contact-me .button-two:hover{
-	background-color: transparent;
-	border: 2px solid #f9004d;
-	cursor: pointer;
-}*/
+
 footer{
 	position: relative;
 	width: 100%;
@@ -688,3 +566,247 @@ body {
 	height: auto;
 	border-radius: 10px;
 }
+
+
+
+/* Mobile Responsiveness for Projects and Blogs Overview Pages */
+@media (max-width: 768px) {
+
+	nav {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 20px;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+
+	nav ul li {
+		padding: 10px;
+		text-align: center;
+	}
+
+	.hero {
+		height: auto;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+	.content {
+		position: relative;
+		top: auto;
+		left: auto;
+		transform: none;
+		padding: 20px;
+	}
+	
+	.cv-image img {
+		width: 90%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	
+	/* For general layout adjustments in projects and blogs */
+	.projects-list, .blog-list {
+		padding: 10px;
+		margin: 20px auto;
+		max-width: 100%;
+		width: auto;
+	}
+
+	/* Ensuring project/blog items stack vertically on smaller screens */
+	.project, .blog-post {
+		flex-direction: column; /* Stack the image and text */
+		text-align: center; /* Center content */
+		gap: 5px; /* Reduce gap between the image and text */
+		padding: 5px;
+	}
+
+	/* Scaling down project/blog images */
+	.project img, .blog-post img {
+		width: 100%; /* Make images responsive */
+		height: auto; /* Maintain aspect ratio */
+		max-width: 50%; /* Limit image width */
+		/*margin: 0 auto;  Center images */
+	}
+
+	.project-text, .blog-text {
+		padding-left: 0;
+		text-align: center;
+		min-width: unset; /* Let the text adapt to the container */
+		width: 100%; /* Ensures text takes up full width */
+	}
+
+	.project-text h3, .blog-text h3 {
+		font-size: 1.2rem; /* Smaller font size on mobile */
+	}
+
+	.project-text p, .blog-text p {
+		font-size: 1rem; /* Smaller font size for better readability */
+		color: #bbb;
+	}
+
+	/* Ensuring the portfolio showcase video is responsive */
+	.projects-video iframe, .about-video-container iframe {
+		width: 100%;
+		height: auto;
+	}
+
+	/* Adjusting the footer layout */
+	footer {
+		padding: 30px 20px;
+		text-align: center;
+	}
+
+	footer .social {
+		justify-content: center; /* Center social icons */
+		gap: 15px; /* Adjust spacing between icons */
+	}
+
+	/* Styling the footer text */
+	footer p:nth-child(2) {
+		width: 90%;
+	}
+
+	.social a {
+		width: 40px;
+		height: 40px;
+		font-size: 16px;
+	}
+}
+
+
+/*!* Mobile Responsiveness *!*/
+/*@media (max-width: 768px) {*/
+/*	nav {*/
+/*		flex-direction: column;*/
+/*		align-items: center;*/
+/*		padding-top: 20px;*/
+/*	}*/
+
+/*	nav ul {*/
+/*		display: flex;*/
+/*		flex-direction: column;*/
+/*		align-items: center;*/
+/*		padding: 0;*/
+/*	}*/
+
+/*	nav ul li {*/
+/*		padding: 10px;*/
+/*		text-align: center;*/
+/*	}*/
+
+/*	.hero {*/
+/*		height: auto;*/
+/*		padding-bottom: 20px;*/
+/*		text-align: center;*/
+/*	}*/
+
+/*	.content {*/
+/*		position: relative;*/
+/*		top: auto;*/
+/*		left: auto;*/
+/*		transform: none;*/
+/*		padding: 20px;*/
+/*	}*/
+
+/*	h1 {*/
+/*		font-size: 40px;*/
+/*	}*/
+
+/*	h4 {*/
+/*		font-size: 20px;*/
+/*	}*/
+
+/*	.about {*/
+/*		padding: 50px 20px;*/
+/*	}*/
+
+/*	.main {*/
+/*		flex-direction: column;*/
+/*		text-align: center;*/
+/*	}*/
+
+/*	.about img {*/
+/*		height: auto;*/
+/*		width: 90%;*/
+/*		margin-bottom: 20px;*/
+/*	}*/
+
+/*	.about-text {*/
+/*		width: 100%;*/
+/*		padding: 10px;*/
+/*	}*/
+
+/*	.projects-video {*/
+/*		padding: 30px 20px;*/
+/*	}*/
+
+/*	.about-video-container {*/
+/*		width: 100%;*/
+/*	}*/
+
+/*	.footer p:nth-child(2) {*/
+/*		width: 90%;*/
+/*	}*/
+
+/*	.social a {*/
+/*		width: 40px;*/
+/*		height: 40px;*/
+/*		font-size: 16px;*/
+/*	}*/
+/*}*/
+
+
+/*!* Mobile & Tablet Adjustments *!*/
+/*@media (max-width: 768px) {*/
+/*	!* Navigation *!*/
+/*	nav ul {*/
+/*		flex-direction: column;*/
+/*		align-items: center;*/
+/*	}*/
+
+/*	!* Adjust the projects list and other sections for mobile *!*/
+/*	.projects-list,*/
+/*	.blog-content,*/
+/*	.about-video-container {*/
+/*		max-width: 90%;*/
+/*		padding: 10px;*/
+/*	}*/
+
+/*	.project {*/
+/*		flex-direction: column;*/
+/*		text-align: center;*/
+/*	}*/
+
+/*	.project img {*/
+/*		width: 100%;*/
+/*		margin-right: 0;*/
+/*	}*/
+
+/*	.project-text {*/
+/*		padding-left: 0;*/
+/*	}*/
+
+/*	!* Adjust iframe *!*/
+/*	iframe {*/
+/*		width: 100%;*/
+/*		height: auto;*/
+/*	}*/
+/*}*/
+
+/*@media (max-width: 480px) {*/
+/*	!* Font size adjustments *!*/
+/*	h2 {*/
+/*		font-size: 1.5rem;*/
+/*	}*/
+
+/*	p {*/
+/*		font-size: 0.9rem;*/
+/*	}*/
+/*}*/
+
