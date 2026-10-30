@@ -1,72 +1,101 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CV</title>
-	<link rel="stylesheet" href="css/style.css">
-	
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<title>CV · Lucian Dusciac</title>
+	<meta name="description" content="Education, experience and skills of Lucian Dusciac, game developer and programmer.">
+	<meta name="theme-color" content="#07080c">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="backdrop" aria-hidden="true"><span class="glow a"></span><span class="glow b"></span><span class="glow c"></span></div>
+<header class="nav">
+	<div class="wrap">
+		<a class="brand" href="index.html"><span class="mark">LD</span><span class="name">Lucian Dusciac</span></a>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+		<label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+		<ul class="nav-links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="cv.html" class="active">CV</a></li>
+			<li><a class="ext" href="https://github.com/luciandusciac" target="_blank" rel="noopener">GitHub<i class="fas fa-arrow-up-right-from-square fa-external-link-alt"></i></a></li>
+		</ul>
+	</div>
+</header>
 
-<nav>
-	<h2 class="logo">Portfolio</h2>
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="cv.html">CV</a></li>
-		<li><a href="https://github.com/luciandusciac" target="_blank">GitHub</a></li>
-		<li><a href="blog.html">Blog</a></li>
-		<li><a href="projects.html">Projects</a></li>
-	</ul>
-</nav>
-
-<section class="cv-container">
-	<h1>Curriculum Vitae</h1>
-
-	<div class="cv-content">
-		<div class="cv-text">
-			<h2>Education</h2>
-			<p>MSc Computer Science <br> University of Bath (Expected Completion 2027-2028)</p>
-			
-			<p> BSc Computer Games Technology  <br> Southampton Solent University (First Class Honours)</p>
-
-			<h2>Work Experience</h2>
-			<p>• Lead Programmer - Duskforge Studios (2023 - 2024) <br> • Generalist Programmer, DevOps/Release Engineer - Waterfoul Studios (2024 - Present)</p>
-
-			<h2>Skills</h2>
-			<p>• Java, Pascal, Visual Basic, C, C++ <br>• Unity, UE4/5, SDL, DirectX11 <br> • HTML, CSS <br> • Microsoft Office</p>
-
-			<h2>Languages</h2>
-			<p>• English (Advanced) <br> • French (Upper Intermediate) <br> • Russian (Advanced) <br> • Romanian (Native)</p>
-
-			<div class="cv-links">
-				<a href="https://uk.linkedin.com/in/lucian-dusciac-916051238" target="_blank" class="linkedin-btn">LinkedIn</a>
-				<a href="docs/Lucian_Dusciac_Game_Dev_CV.pdf" download class="download-btn">Download CV</a>
+<main>
+	<section class="page-head">
+		<div class="wrap reveal">
+			<span class="eyebrow">Curriculum vitae</span>
+			<h1>CV</h1>
+			<p>Where I have studied, where I have worked and what I work with.</p>
+		</div>
+	</section>
+	<section>
+		<div class="wrap cv-grid">
+			<div>
+				<div class="cv-block reveal">
+					<h2><i class="fas fa-briefcase"></i> Work experience</h2>
+					<ul class="timeline">
+						<li class="now"><b>Generalist Programmer, DevOps / Release Engineer</b><span>Waterfoul Studios</span><em>2024 – Present</em></li>
+						<li><b>Lead Programmer</b><span>Duskforge Studios</span><em>2023 – 2024</em></li>
+					</ul>
+				</div>
+				<div class="cv-block reveal">
+					<h2><i class="fas fa-graduation-cap"></i> Education</h2>
+					<ul class="timeline">
+						<li class="now"><b>MSc Computer Science</b><span>University of Bath</span><em>Expected completion 2027 – 2028</em></li>
+						<li><b>BSc Computer Games Technology</b><span>Southampton Solent University · First Class Honours</span></li>
+					</ul>
+				</div>
+				<div class="cv-block reveal">
+					<h2><i class="fas fa-code"></i> Skills</h2>
+					<div class="tags">
+						<span class="tag">C++</span><span class="tag">C</span><span class="tag">Java</span><span class="tag">Pascal</span><span class="tag">Visual Basic</span>
+						<span class="tag">Unity</span><span class="tag">UE4 / UE5</span><span class="tag">SDL</span><span class="tag">DirectX 11</span>
+						<span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Microsoft Office</span>
+					</div>
+				</div>
+				<div class="cv-block reveal">
+					<h2><i class="fas fa-language"></i> Languages</h2>
+					<div class="langs">
+						<div class="lang"><b>Romanian</b><span>Native</span></div>
+						<div class="lang"><b>English</b><span>Advanced</span></div>
+						<div class="lang"><b>Russian</b><span>Advanced</span></div>
+						<div class="lang"><b>French</b><span>Upper intermediate</span></div>
+					</div>
+				</div>
 			</div>
+			<aside class="cv-side reveal d1">
+				<figure class="photo-card">
+					<img src="img/frontlinesteam_1.jpg" alt="Front Lines team photo">
+					<figcaption>Waterfoul Studios team photo</figcaption>
+				</figure>
+				<a class="btn btn-primary" href="docs/Lucian_Dusciac_Game_Dev_CV.pdf" download><i class="fas fa-download"></i> Download CV</a>
+				<a class="btn btn-ghost" href="https://uk.linkedin.com/in/lucian-dusciac-916051238" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+			</aside>
 		</div>
-
-		<div class="cv-image">
-			<img src="img/frontlinesteam_1.jpg" alt="Front Lines Team Photo">
-			<p style="text-align: center;">Waterfoul Studios Team Photo</p>
+	</section>
+</main>
+<footer class="footer">
+	<div class="wrap">
+		<p>&copy; 2026 Lucian Dusciac</p>
+		<nav class="links">
+			<a href="index.html">Home</a><a href="projects.html">Projects</a><a href="blog.html">Blog</a><a href="cv.html">CV</a>
+		</nav>
+		<div class="social">
+			<a href="https://uk.linkedin.com/in/lucian-dusciac-916051238" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://github.com/luciandusciac" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+			<a href="mailto:dusciaclucian@yahoo.com?subject=Inquiry&body=Hello Lucian," aria-label="Email"><i class="fas fa-envelope"></i></a>
 		</div>
 	</div>
-</section>
-
-<footer>
-	<p>Contact Me:</p>
-	<!--<p>dusciaclucian@yahoo.com</p>-->
-	<div class="social">
-		<a href="https://uk.linkedin.com/in/lucian-dusciac-916051238"><i class="fab fa-linkedin"></i></a>
-		<!--<a href="#"><i class="fab fa-instagram"></i></a>-->
-		<a href="mailto:dusciaclucian@yahoo.com?subject=Inquiry&body=Hello Lucian,">
-			<i class="fab fa-yahoo"></i>
-		</a>
-	</div>
-	<p class="end">&copy; 2026 Lucian Dusciac</p>
 </footer>
-
+<script src="js/site.js"></script>
 </body>
 </html>

@@ -1,124 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Portfolio website</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
-	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lucian Dusciac · Game Developer</title>
+	<meta name="description" content="Lucian Dusciac, indie game developer and programmer. Projects, devlogs and CV.">
+	<meta name="theme-color" content="#07080c">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<!----hero Section start---->
+<div class="backdrop" aria-hidden="true"><span class="glow a"></span><span class="glow b"></span><span class="glow c"></span></div>
+<header class="nav">
+	<div class="wrap">
+		<a class="brand" href="index.html"><span class="mark">LD</span><span class="name">Lucian Dusciac</span></a>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+		<label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+		<ul class="nav-links">
+			<li><a href="index.html" class="active">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a class="ext" href="https://github.com/luciandusciac" target="_blank" rel="noopener">GitHub<i class="fas fa-arrow-up-right-from-square fa-external-link-alt"></i></a></li>
+		</ul>
+	</div>
+</header>
 
-	<div class="hero">
-		<nav>
-			<h2 class="logo">Portfolio</h2>
-			<ul>
-				<li><a href="cv.html">CV</a></li>
-				<li><a href="https://github.com/luciandusciac" target="_blank">GitHub</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<!--<li><a href="#">Skills</a></li>
-				<li><a href="#">Contact Us</a></li>-->
-			</ul>
-			<!--<a href="#" class="btn">Subscribe</a>-->
-		</nav>
-		
-		<!----About section start---->
-		<section class="about">
-			<div class="main">
-				<img src="img/me.png" alt="Lucian Dusciac">
-				<div class="about-text">
-					<h2>Lucian Dusciac</h2>
-					<h5>I am a 25-year-old indie game developer and programmer from Moldova. 
-						Follow me along my journey into the world of coding, game-dev and game publishing and be sure to check out my projects!</h5>
-					<p></p>
-					<!-- <button type="button">Let's Talk</button>-->
+<main>
+	<section class="hero">
+		<div class="wrap">
+			<div class="reveal">
+				<span class="eyebrow">Game developer · Programmer</span>
+				<h1>Lucian<br><span class="grad-text">Dusciac</span></h1>
+				<p class="lead">I am a <strong>25-year-old indie game developer and programmer from Moldova</strong>. Follow me along my journey into the world of coding, game-dev and game publishing, and be sure to check out my projects!</p>
+				<div class="btn-row">
+					<a class="btn btn-primary" href="projects.html">View projects <i class="fas fa-arrow-right"></i></a>
+					<a class="btn btn-ghost" href="docs/Lucian_Dusciac_Game_Dev_CV.pdf" download><i class="fas fa-download"></i> Download CV</a>
+				</div>
+				<div class="hero-facts">
+					<span class="tag hot"><i class="fab fa-steam"></i> Shipped on Steam</span>
+					<span class="tag">UE5 · Unity · C++</span>
+					<span class="tag">BSc First Class Honours</span>
 				</div>
 			</div>
-		</section>
-	</div>
-
-	
-
-	<!----- Projects Video Section -----
-	<section class="projects-video">
-		<h2>Portfolio Showcase Reel</h2>
-		<div class="about-video-container">
-			<video id="portfolio-video" autoplay loop controls playsinline>
-				<source src="videos/Portfolio.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
+			<div class="portrait reveal d2">
+				<div class="frame"><img src="img/me.png" alt="Lucian Dusciac"></div>
+				<div class="badge one"><span class="dot"></span><div><small>Currently</small>Waterfoul Studios</div></div>
+				<div class="badge two"><i class="fas fa-graduation-cap"></i><div><small>Studying</small>MSc CS · Bath</div></div>
+			</div>
 		</div>
 	</section>
 
-	<script>
-		// Get the video element
-		const video = document.getElementById('portfolio-video');
-
-		// Set up the IntersectionObserver
-		const observer = new IntersectionObserver((entries, observer) => {
-			entries.forEach(entry => {
-				if (entry.isIntersecting) {
-					// Play the video when it becomes visible in the viewport
-					video.play();
-				} else {
-					// Pause the video when it goes out of view
-					video.pause();
-				}
-			});
-		}, {
-			threshold: 0.5 // This means the video will play when 50% of the video is visible
-		});
-
-		// Start observing the video element
-		observer.observe(video);
-	</script>-->  <!--"https://drive.google.com/file/d/1f8v_3-oAJ3ZNfWRLwWUvYcuhWe46SfoC/preview"    https://youtu.be/Nqnx8u8rG5c
-
-	<section class="projects-video">
-		<h2>Portfolio Showcase Reel</h2>
-		<div class="about-video-container">
-			<iframe
-					id="drive-video"
-					src="https://drive.google.com/file/d/1f8v_3-oAJ3ZNfWRLwWUvYcuhWe46SfoC/preview"
-					allow="autoplay; encrypted-media"
-					allowfullscreen>
-			</iframe>
-		</div>
-	</section> -->
-
-	<section class="projects-video">
-		<h2>Portfolio Showcase Reel</h2>
-		<div class="about-video-container">
-			<iframe
-					id="youtube-video"
-					width="100%"
-					height="480"
-					src="https://www.youtube.com/embed/Nqnx8u8rG5c"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen>
-			</iframe>
+	<section class="section" id="reel">
+		<div class="wrap">
+			<div class="section-head reveal">
+				<div><span class="eyebrow">Showreel</span><h2>Portfolio showcase reel</h2></div>
+				<p>A quick look at the games, tools and tech I have built.</p>
+			</div>
+			<div class="reel reveal d1">
+				<iframe src="https://www.youtube.com/embed/Nqnx8u8rG5c" title="Portfolio showcase reel" loading="lazy"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
 		</div>
 	</section>
 
-	
-	<footer>
-		<p>Contact Me:</p>
-		<!--<p>dusciaclucian@yahoo.com</p>-->
-		<div class="social">
-			<a href="https://uk.linkedin.com/in/lucian-dusciac-916051238"><i class="fab fa-linkedin"></i></a>
-			<!--<a href="#"><i class="fab fa-instagram"></i></a>-->
-			<a href="mailto:dusciaclucian@yahoo.com?subject=Inquiry&body=Hello Lucian,">
-				<i class="fab fa-yahoo"></i>
+	<section class="section">
+		<div class="wrap">
+			<div class="section-head reveal">
+				<div><span class="eyebrow">Selected work</span><h2>Featured projects</h2></div>
+				<a class="link-arrow" href="projects.html">All projects <i class="fas fa-arrow-right"></i></a>
+			</div>
+			<div class="grid three">
+			<a class="card reveal d1" href="project1.html">
+				<div class="media"><span class="num">01</span><img src="img/frontlines.png" alt="Front Lines" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">UE5</span><span class="tag hot">Steam release</span><span class="tag">Waterfoul Studios</span></div>
+					<h3>Front Lines</h3>
+					<p>2.5D action tank shooter, released on Steam with Waterfoul Studios.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
 			</a>
+			<a class="card reveal d2" href="project2.html">
+				<div class="media"><span class="num">02</span><img src="img/echoes_of_the_abbey.png" alt="Echoes of the Abbey" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">Unity</span><span class="tag">Team of 55</span><span class="tag">Duskforge Studios</span></div>
+					<h3>Echoes of the Abbey</h3>
+					<p>3D first-person horror, made by a team of 55 at Duskforge Studios.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
+			</a>
+			<a class="card reveal d3" href="project3.html">
+				<div class="media"><span class="num">03</span><img src="img/night_in_sanguimesia.png" alt="Night in Sanguimesia" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">Unity</span><span class="tag">2D</span><span class="tag">Team of 14</span></div>
+					<h3>Night in Sanguimesia</h3>
+					<p>2D souls-lite action game, made by a team of 14 at Duskforge Studios.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
+			</a>
+			</div>
 		</div>
-		<p class="end">&copy; 2026 Lucian Dusciac</p>
-	</footer>
+	</section>
+
+	<section class="section">
+		<div class="wrap">
+			<div class="section-head reveal">
+				<div><span class="eyebrow">Toolkit</span><h2>What I work with</h2></div>
+			</div>
+			<div class="toolkit">
+				<div class="tool reveal"><div class="ico"><i class="fas fa-code"></i></div><h3>Languages</h3><div class="tags"><span class="tag">C++</span><span class="tag">C</span><span class="tag">Java</span><span class="tag">Pascal</span><span class="tag">Visual Basic</span></div></div>
+				<div class="tool reveal d1"><div class="ico"><i class="fas fa-gamepad"></i></div><h3>Engines</h3><div class="tags"><span class="tag">Unreal Engine 4/5</span><span class="tag">Unity</span></div></div>
+				<div class="tool reveal d2"><div class="ico"><i class="fas fa-cube"></i></div><h3>Low level</h3><div class="tags"><span class="tag">DirectX 11</span><span class="tag">SDL</span><span class="tag">PS4 SDK</span></div></div>
+				<div class="tool reveal d3"><div class="ico"><i class="fas fa-rocket"></i></div><h3>Shipping</h3><div class="tags"><span class="tag">Steam releases</span><span class="tag">CI/CD · Jenkins</span><span class="tag">HTML · CSS</span></div></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="wrap">
+			<div class="cta reveal">
+				<div>
+					<h2>Got a project, a role or just want to talk games?</h2>
+					<p>I am always happy to hear from people.</p>
+				</div>
+				<div class="btn-row">
+					<a class="btn btn-primary" href="mailto:dusciaclucian@yahoo.com?subject=Inquiry&body=Hello Lucian,"><i class="fas fa-envelope"></i> Email me</a>
+					<a class="btn btn-ghost" href="https://uk.linkedin.com/in/lucian-dusciac-916051238" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="wrap">
+		<p>&copy; 2026 Lucian Dusciac</p>
+		<nav class="links">
+			<a href="index.html">Home</a><a href="projects.html">Projects</a><a href="blog.html">Blog</a><a href="cv.html">CV</a>
+		</nav>
+		<div class="social">
+			<a href="https://uk.linkedin.com/in/lucian-dusciac-916051238" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://github.com/luciandusciac" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+			<a href="mailto:dusciaclucian@yahoo.com?subject=Inquiry&body=Hello Lucian," aria-label="Email"><i class="fas fa-envelope"></i></a>
+		</div>
+	</div>
+</footer>
+<script src="js/site.js"></script>
 </body>
 </html>

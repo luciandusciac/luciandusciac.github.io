@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Making an FPS</title>
-    <link rel="stylesheet" href="../css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Making an FPS Tech Demo · Lucian Dusciac</title>
+	<meta name="description" content="Devlogs from my final year FPS tech demo.">
+	<meta name="theme-color" content="#07080c">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+<div class="backdrop" aria-hidden="true"><span class="glow a"></span><span class="glow b"></span><span class="glow c"></span></div>
+<header class="nav">
+	<div class="wrap">
+		<a class="brand" href="../index.html"><span class="mark">LD</span><span class="name">Lucian Dusciac</span></a>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+		<label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+		<ul class="nav-links">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../projects.html">Projects</a></li>
+			<li><a href="../blog.html" class="active">Blog</a></li>
+			<li><a href="../cv.html">CV</a></li>
+			<li><a class="ext" href="https://github.com/luciandusciac" target="_blank" rel="noopener">GitHub<i class="fas fa-arrow-up-right-from-square fa-external-link-alt"></i></a></li>
+		</ul>
+	</div>
+</header>
 
-<nav>
-    <h2 class="logo">My Blog</h2>
-    <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../cv.html">CV</a></li>
-        <li><a href="../https://github.com/luciandusciac" target="_blank">GitHub</a></li>
-        <li><a href="../blog.html">Blog</a></li>
-        <li><a href="../projects.html">Projects</a></li>
-    </ul>
-</nav>
-
-<article class="blog-content">
-    <h1>Making an FPS Tech Demo</h1>
-    <embed src="../docs/Devlogs.pdf" type="application/pdf" width="100%" height="800px" />
-</article>
-
+<main>
+	<article class="article">
+		<section class="page-head">
+			<div class="reveal">
+				<a class="back" href="../blog.html"><i class="fas fa-arrow-left"></i> All posts</a>
+				<h1>Making an FPS Tech Demo</h1>
+				<div class="meta"><span class="tag">Devlog</span><span class="tag">UE5</span><span class="tag">C++</span></div>
+				<p style="margin-top:18px">The full set of devlogs from my final year project. <a class="link-arrow" href="../docs/Devlogs.pdf" target="_blank" rel="noopener" style="display:inline-flex">Open the PDF <i class="fas fa-arrow-right"></i></a></p>
+			</div>
+		</section>
+		<embed class="pdf reveal" src="../docs/Devlogs.pdf" type="application/pdf">
+		<nav class="pager">
+			<a href="blog1.html"><small>Previous post</small><b>Making Front Lines</b></a>
+			<a class="next" href="../project4.html"><small>The project</small><b>FPS Tech Demo</b></a>
+		</nav>
+	</article>
+</main>
+<footer class="footer">
+	<div class="wrap">
+		<p>&copy; 2026 Lucian Dusciac</p>
+		<nav class="links">
+			<a href="../index.html">Home</a><a href="../projects.html">Projects</a><a href="../blog.html">Blog</a><a href="../cv.html">CV</a>
+		</nav>
+		<div class="social">
+			<a href="https://uk.linkedin.com/in/lucian-dusciac-916051238" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://github.com/luciandusciac" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+			<a href="mailto:dusciaclucian@yahoo.com?subject=Inquiry&body=Hello Lucian," aria-label="Email"><i class="fas fa-envelope"></i></a>
+		</div>
+	</div>
+</footer>
+<script src="../js/site.js"></script>
 </body>
 </html>

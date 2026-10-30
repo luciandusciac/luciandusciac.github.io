@@ -1,133 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects · Lucian Dusciac</title>
+	<meta name="description" content="Games, tech demos and tools by Lucian Dusciac.">
+	<meta name="theme-color" content="#07080c">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="backdrop" aria-hidden="true"><span class="glow a"></span><span class="glow b"></span><span class="glow c"></span></div>
+<header class="nav">
+	<div class="wrap">
+		<a class="brand" href="index.html"><span class="mark">LD</span><span class="name">Lucian Dusciac</span></a>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+		<label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+		<ul class="nav-links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html" class="active">Projects</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a class="ext" href="https://github.com/luciandusciac" target="_blank" rel="noopener">GitHub<i class="fas fa-arrow-up-right-from-square fa-external-link-alt"></i></a></li>
+		</ul>
+	</div>
+</header>
 
-<nav>
-    <h2 class="logo">Portfolio</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="https://github.com/luciandusciac" target="_blank">GitHub</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="projects.html">Projects</a></li>
-    </ul>
-</nav>
-
-<section class="projects-list">
-    <h2>Project Detailed Breakdown</h2>
-
-    <div class="project">
-        <a href="project1.html">
-            <img src="img/frontlines.png" alt="Project 1">
-            <div class="project-text">
-                <h3>Front Lines - 2.5D Action Tank Shooter Game (UE5)</h3>
-                <p>Steam release as part of Waterfoul Studios.</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="project">
-        <a href="project2.html">
-            <img src="img/echoes_of_the_abbey.png" alt="Project 2">
-            <div class="project-text">
-                <h3>Echoes of the Abbey - 3D First Person Horror (Unity)</h3>
-                <p>Worked on as part of Duskforge Studios in a team of 55 people.</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="project">
-        <a href="project3.html">
-            <img src="img/night_in_sanguimesia.png" alt="Project 3">
-            <div class="project-text">
-                <h3>Night in Sanguimesia - 2D Souls-Lite Action Game (Unity)</h3>
-                <p>Worked on as part of Duskforge Studios in a team of 14 people.</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="project">
-        <a href="project4.html">
-            <img src="img/FPS.gif" alt="Project 4">
-            <div class="project-text">
-                <h3>FPS Tech Demo (UE5)</h3>
-                <p>Final year project with a focus on FPS mechanics.</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="project">
-        <a href="project5.html">
-            <img src="img/MobileGame.png" alt="Project 5">
-            <div class="project-text">
-                <h3>WOW-Style Mobile Tech Demo (Unity)</h3>
-                <p>Mobile tech demo with World of Warcraft mechanics made for Android.</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="project">
-        <a href="project6.html">
-            <img src="img/DirectX.png" alt="Project 6">
-            <div class="project-text">
-                <h3>Graphics Engine (C++, DirectX11, SDL)</h3>
-                <p>Graphics engine and render pipeline along with GUI editor.</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="project">
-        <a href="project7.html">
-            <img src="img/CollisionTool.png" alt="Project 7">
-            <div class="project-text">
-                <h3>Collision System Tool (C++, SDL)</h3>
-                <p>Loosely-coupled collision system that can be connected to any engine or game infrastructure.</p>
-            </div>
-        </a>
-    </div>
-    
-    <div class="project">
-        <a href="project8.html">
-            <img src="img/UE4TPS.png" alt="Project 8">
-            <div class="project-text">
-                <h3>TPS Local Multiplayer Tech Demo (UE4)</h3>
-                <p>Dual control local multiplayer third-person shooter.</p>
-            </div>
-        </a>
-    </div>
-    
-    <div class="project">
-        <a href="project9.html">
-            <img src="img/PS4.png" alt="Project 9">
-            <div class="project-text">
-                <h3>Free-fall Platformer Game (PS4, C++)</h3>
-                <p>Small-scale game made to learn the PS4 coding infrastructure.</p>
-            </div>
-        </a>
-    </div>
-    
-</section>
-
-<footer>
-    <p>Contact Me:</p>
-    <!--<p>dusciaclucian@yahoo.com</p>-->
-    <div class="social">
-        <a href="https://uk.linkedin.com/in/lucian-dusciac-916051238"><i class="fab fa-linkedin"></i></a>
-        <!--<a href="#"><i class="fab fa-instagram"></i></a>-->
-        <a href="mailto:dusciaclucian@yahoo.com?subject=Inquiry&body=Hello Lucian,">
-            <i class="fab fa-yahoo"></i>
-        </a>
-    </div>
-    <p class="end">&copy; 2026 Lucian Dusciac</p>
+<main>
+	<section class="page-head">
+		<div class="wrap reveal">
+			<span class="eyebrow">Work</span>
+			<h1>Projects</h1>
+			<p>A detailed breakdown of the games, tech demos and tools I have built, from Steam releases to engine programming.</p>
+		</div>
+	</section>
+	<section>
+		<div class="wrap">
+			<div class="grid">
+			<a class="card reveal wide" href="project1.html">
+				<div class="media"><span class="num">01</span><img src="img/frontlines.png" alt="Front Lines" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">UE5</span><span class="tag hot">Steam release</span><span class="tag">Waterfoul Studios</span></div>
+					<h3>Front Lines</h3>
+					<p>2.5D action tank shooter, released on Steam with Waterfoul Studios.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
+			</a>
+			<a class="card reveal" href="project2.html">
+				<div class="media"><span class="num">02</span><img src="img/echoes_of_the_abbey.png" alt="Echoes of the Abbey" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">Unity</span><span class="tag">Team of 55</span><span class="tag">Duskforge Studios</span></div>
+					<h3>Echoes of the Abbey</h3>
+					<p>3D first-person horror, made by a team of 55 at Duskforge Studios.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
+			</a>
+			<a class="card reveal" href="project3.html">
+				<div class="media"><span class="num">03</span><img src="img/night_in_sanguimesia.png" alt="Night in Sanguimesia" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">Unity</span><span class="tag">2D</span><span class="tag">Team of 14</span></div>
+					<h3>Night in Sanguimesia</h3>
+					<p>2D souls-lite action game, made by a team of 14 at Duskforge Studios.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
+			</a>
+			<a class="card reveal" href="project4.html">
+				<div class="media"><span class="num">04</span><img src="img/FPS.gif" alt="FPS Tech Demo" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">UE5</span><span class="tag">C++</span><span class="tag">Final year project</span></div>
+					<h3>FPS Tech Demo</h3>
+					<p>Final year project focused on first-person shooter mechanics.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
+			</a>
+			<a class="card reveal" href="project5.html">
+				<div class="media"><span class="num">05</span><img src="img/MobileGame.png" alt="WoW-Style Mobile Tech Demo" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">Unity</span><span class="tag">Android</span><span class="tag">Mobile</span></div>
+					<h3>Mobile Tech Demo</h3>
+					<p>An Android tech demo built around World of Warcraft style mechanics.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
+			</a>
+			<a class="card reveal" href="project6.html">
+				<div class="media"><span class="num">06</span><img src="img/DirectX.png" alt="DirectX C++ Graphics Engine" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">C++</span><span class="tag">DirectX 11</span><span class="tag">SDL</span></div>
+					<h3>Graphics Engine</h3>
+					<p>A graphics engine and render pipeline with a GUI editor.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
+			</a>
+			<a class="card reveal" href="project7.html">
+				<div class="media"><span class="num">07</span><img src="img/CollisionTool.png" alt="C++ and SDL Collision Tool" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">C++</span><span class="tag">SDL</span><span class="tag">Tools</span></div>
+					<h3>Collision Tool</h3>
+					<p>A loosely coupled collision system that plugs into any engine.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
+			</a>
+			<a class="card reveal" href="project8.html">
+				<div class="media"><span class="num">08</span><img src="img/UE4TPS.png" alt="Local Multiplayer TPS Tech Demo" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">UE4</span><span class="tag">C++</span><span class="tag">Multiplayer</span></div>
+					<h3>Local Multiplayer TPS</h3>
+					<p>A dual-control, local multiplayer third-person shooter.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
+			</a>
+			<a class="card reveal" href="project9.html">
+				<div class="media"><span class="num">09</span><img src="img/PS4.png" alt="PS4 Platformer Game" loading="lazy"></div>
+				<div class="body">
+					<div class="tags"><span class="tag">PS4</span><span class="tag">C++</span><span class="tag">Console</span></div>
+					<h3>PS4 Platformer</h3>
+					<p>A small free-fall platformer made to learn the PS4 coding infrastructure.</p>
+					<span class="more">View project <i class="fas fa-arrow-right"></i></span>
+				</div>
+			</a>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="wrap">
+		<p>&copy; 2026 Lucian Dusciac</p>
+		<nav class="links">
+			<a href="index.html">Home</a><a href="projects.html">Projects</a><a href="blog.html">Blog</a><a href="cv.html">CV</a>
+		</nav>
+		<div class="social">
+			<a href="https://uk.linkedin.com/in/lucian-dusciac-916051238" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://github.com/luciandusciac" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+			<a href="mailto:dusciaclucian@yahoo.com?subject=Inquiry&body=Hello Lucian," aria-label="Email"><i class="fas fa-envelope"></i></a>
+		</div>
+	</div>
 </footer>
-
+<script src="js/site.js"></script>
 </body>
 </html>

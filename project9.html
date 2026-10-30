@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PS4 Game</title>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PS4 Platformer Game · Lucian Dusciac</title>
+	<meta name="description" content="A small free-fall platformer made to learn the PS4 coding infrastructure.">
+	<meta name="theme-color" content="#07080c">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="backdrop" aria-hidden="true"><span class="glow a"></span><span class="glow b"></span><span class="glow c"></span></div>
+<header class="nav">
+	<div class="wrap">
+		<a class="brand" href="index.html"><span class="mark">LD</span><span class="name">Lucian Dusciac</span></a>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+		<label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+		<ul class="nav-links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html" class="active">Projects</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a class="ext" href="https://github.com/luciandusciac" target="_blank" rel="noopener">GitHub<i class="fas fa-arrow-up-right-from-square fa-external-link-alt"></i></a></li>
+		</ul>
+	</div>
+</header>
 
-<nav>
-    <h2 class="logo">Portfolio</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="https://github.com/luciandusciac" target="_blank">GitHub</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="projects.html">Projects</a></li>
-    </ul>
-</nav>
-
-<section class="project-detail">
-    <h2>PS4 Platformer Game</h2>
-    <div class="video-container">
-        <video class="project-video" autoplay loop muted playsinline>
-            <source src="videos/PS4.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="project-text-container">
-        <p>
+<main>
+	<section class="page-head detail-head">
+		<div class="wrap reveal">
+			<a class="back" href="projects.html"><i class="fas fa-arrow-left"></i> All projects</a>
+			<h1>PS4 Platformer Game</h1>
+			<p>A small free-fall platformer made to learn the PS4 coding infrastructure.</p>
+			<div class="tags"><span class="tag">PS4</span><span class="tag">C++</span><span class="tag">Console</span></div>
+		</div>
+	</section>
+	<section>
+		<div class="wrap">
+			<div class="detail-media reveal">
+				<video autoplay loop muted playsinline>
+					<source src="videos/PS4.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="detail-body">
+				<div class="prose reveal">
+					<p>
             One can probably tell by the quality of this project that this was more of an experiment than a full-fledged game. I wanted to see how far I could push the PS4 hardware and what I could achieve with it.
             I was also experimenting with the PS4 SDK and how to use it effectively. The biggest challenge for me was getting the game to run smoothly on the PS4 hardware, as I had to optimize everything from the graphics to the physics.
-            As you can see, the project has some pitfalls, but it has nevertheless been a valuable experience and a precious insight into the world of console game development. I have learned a lot and 
+            As you can see, the project has some pitfalls, but it has nevertheless been a valuable experience and a precious insight into the world of console game development. I have learned a lot and
             plan to hone and develop my skills in this direction and area of expertise.
-        </p>
-    </div>
-    <a href="projects.html" class="back-button">← Back to Projects</a>
-</section>
+					</p>
+				</div>
+				<aside class="aside reveal d1">
+					<dl><dt>Role</dt><dd>Solo developer</dd></dl>
+					<dl><dt>Tech</dt><dd>PS4 SDK · C++</dd></dl>
+					<dl><dt>Team</dt><dd>Solo</dd></dl>
 
+				</aside>
+			</div>
+			<nav class="pager">
+				<a href="project8.html"><small>Previous</small><b>Local Multiplayer TPS</b></a>
+				<a class="next" href="project1.html"><small>Next</small><b>Front Lines</b></a>
+			</nav>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="wrap">
+		<p>&copy; 2026 Lucian Dusciac</p>
+		<nav class="links">
+			<a href="index.html">Home</a><a href="projects.html">Projects</a><a href="blog.html">Blog</a><a href="cv.html">CV</a>
+		</nav>
+		<div class="social">
+			<a href="https://uk.linkedin.com/in/lucian-dusciac-916051238" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://github.com/luciandusciac" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+			<a href="mailto:dusciaclucian@yahoo.com?subject=Inquiry&body=Hello Lucian," aria-label="Email"><i class="fas fa-envelope"></i></a>
+		</div>
+	</div>
+</footer>
+<script src="js/site.js"></script>
 </body>
 </html>
